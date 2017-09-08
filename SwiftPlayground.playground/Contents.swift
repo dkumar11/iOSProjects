@@ -118,7 +118,7 @@ func percentageString(forNumber x: Double) -> String {
     return String(x*10) + "%"
 }
 
-var percentageStringClosure = {x -> String in return String(x * 10) + "%"}
+var percentageStringClosure = {(x: Double) -> String in return String(x * 10) + "%"}
 //: Tests below (Ignore)
 class PlaygroundTests: XCTestCase {
     func testArePalindromes() {
